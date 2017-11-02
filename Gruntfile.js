@@ -19,8 +19,8 @@ module.exports = function (grunt) {
 
   // Configurable paths for the application
   var appConfig = {
-    app: require('./bower.json').appPath || 'app',
-    dist: 'dist'
+    app: 'public/app',
+    dist: 'public/dist'
   };
 
   // Define the configuration for all the tasks
@@ -81,7 +81,7 @@ module.exports = function (grunt) {
               connect.static('.tmp'),
               connect().use(
                 '/bower_components',
-                connect.static('./bower_components')
+                connect.static('./public/bower_components')
               ).use(
                 '/node_modules',
                 connect.static('./node_modules')
@@ -100,7 +100,7 @@ module.exports = function (grunt) {
               connect.static('test'),
               connect().use(
                 '/bower_components',
-                connect.static('./bower_components')
+                connect.static('./public/bower_components')
               ).use(
                 '/node_modules',
                 connect.static('./node_modules')
