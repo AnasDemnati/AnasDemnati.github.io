@@ -77,7 +77,7 @@
   },
   "scripts": {
     "test": "grunt test",
-    "prestart": "grunt build",
+    "prestart": "grunt serve",
     "start": "node server.js",
     "serve": "grunt serve",
     "build": "grunt build",
