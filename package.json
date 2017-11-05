@@ -77,11 +77,12 @@
   },
   "scripts": {
     "test": "grunt test",
+    "prestart": "grunt build",
     "start": "node server.js",
     "serve": "grunt serve",
     "build": "grunt build",
     "publish": "grunt buildcontrol:pages",
     "dist": "grunt serve:dist",
-    "postinstall": "bower install && grunt build"
+    "postinstall": "bower install"
   }
 }
