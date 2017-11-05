@@ -82,6 +82,6 @@
     "build": "grunt build",
     "publish": "grunt buildcontrol:pages",
     "dist": "grunt serve:dist",
-    "postinstall": "bower install"
+    "postinstall": "bower install & grunt build"
   }
 }
